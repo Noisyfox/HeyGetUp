@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YO南京</string>
+    <string name="button_iwantsleep">我要出去玩</string>
+    <string name="searchingmsg_on_bus">沿途公交</string>
+    <string name="searchingmsg_at_station">附近车站</string>
+    <string name="searchingmsg_at_station_bus">途经公交</string>
+    <string name="title_activity_spot">SpotActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_spot_map">SpotMapActivity</string>
+
+</resources>

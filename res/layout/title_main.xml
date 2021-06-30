@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_iwantsleep"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/CustomWindowTitleBackgroundColor"
+            android:text="@string/button_iwantsleep"
+            android:textColor="@color/title_button_text" />
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/titlebar_menu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/ColorShadow"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</LinearLayout>

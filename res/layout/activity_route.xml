@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorGray"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RouteActivity" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup_search_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioButton_searchtype_onbus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_on_bus"
+            android:button="@null"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioButton_searchtype_atstation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_at_station"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radioButton_searchtype_findbus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_find_bus"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radioButton_searchtype_setdestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_chose_destination"
+            android:button="@null" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radioGroup_search_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="#ffffff" >
+
+        <ListView
+            android:id="@+id/listView_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_progress"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_round_rectangle" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progressbar" />
+
+            <TextView
+                android:id="@+id/textView_searching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/searchingmsg_on_bus"
+                android:textColor="@color/ColorGray" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
